@@ -12,7 +12,7 @@ let numeri = []
 let risultato = 0;
 
 for(let i = 0; i < 10; i++){
-    numeri[i] = parseInt(prompt("inserisci un numero: ", numeri[i]));
+    numeri[i] = parseInt(prompt("inserisci un numero: "));
     risultato += numeri[i]; 
 }
 console.log("risultato: ", risultato);
