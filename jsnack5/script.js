@@ -12,11 +12,11 @@
 let numeri = [];
 let numeriDispari=[];
 
-for(let i = 0; i < 3; i++){
+for(let i = 0; i < 6; i++){
 
-    numeri[i] = parseInt(prompt("inserisci un numero: "));
+    numeri.push(parseInt(prompt("inserisci un numero: ")));
 
-    if(numeri[i] % 2){
+    if(!(numeri[i] % 2 === 0)){
         numeriDispari[i] = numeri[i];
     }
 }
