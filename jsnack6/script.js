@@ -16,15 +16,15 @@ while (numeri.length < 50) {
     
     const numero = Math.floor(Math.random() * 100 + 1);
 
-    let trovato = false;
+    // let trovato = numeri.includes(numero);
 
-    for(let i = 0; i < numeri.length; i++){
-        if(numero === numeri[i]){
-            trovato = true;
-        }
+    // for(let i = 0; i < numeri.length; i++){
+    //     if(numero === numeri[i]){
+    //         trovato = true;
+    //     }
+    // }
 
-    }
-    if (!trovato) {
+    if (!(numeri.includes(numero))){
         numeri.push(numero);
     }
 }
