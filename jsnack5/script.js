@@ -16,7 +16,7 @@ for(let i = 0; i < 6; i++){
 
     numeri.push(parseInt(prompt("inserisci un numero: ")));
 
-    if(!(numeri[i] % 2 === 0)){
+    if(numeri[i] % 2 !== 0){
         numeriDispari[i] = numeri[i];
     }
 }

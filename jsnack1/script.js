@@ -12,6 +12,8 @@ let b = parseInt(prompt("Inserisci il secondo numero: "));
 
 if (a > b){
     console.log("Il numero più grande è: ", a);
-}else{
+}else if(b > a){
     console.log("Il numero più grande è: ", b);
+}else{
+    console.log("i numeri sono uguali!!");
 }

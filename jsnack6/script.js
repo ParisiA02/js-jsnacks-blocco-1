@@ -8,26 +8,24 @@
         3.2 se non è presente lo inserisco nell'array
 */
 
-// let numeri = [];
-// let numeroCasuale = 0;
-// let trovato = false;
 
-// let a = 0;
+let numeri = [];
 
-// while(a < 5){
 
-//     numeroCasuale = Math.floor(Math.random() * 10) + 1;
-
-//     for(let i = 0; i < numeri.length; i++){
-//         if (numeri[i] === numeroCasuale){
-//             trovato = true;
-//         }
-//     }
+while (numeri.length < 50) {
     
-//     if (!trovato) {
-//         console.log(numeroCasuale);
-//     }
-    
-    
-//     a++;
-// }
+    const numero = Math.floor(Math.random() * 100 + 1);
+
+    let trovato = false;
+
+    for(let i = 0; i < numeri.length; i++){
+        if(numero === numeri[i]){
+            trovato = true;
+        }
+
+    }
+    if (!trovato) {
+        numeri.push(numero);
+    }
+}
+console.log(numeri);

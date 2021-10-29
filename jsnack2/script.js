@@ -14,7 +14,9 @@ let b = prompt("Inserisci la seconda parola: ");
 if (a.length > b.length){
     console.log("Questa è la parola più corta: ",b);
     console.log("Questa è la parola più lunga: ",a);
-}else{
+}else if(b.length > a.length){
     console.log("Questa è la parola più corta: ",a);
     console.log("Questa è la parola più lunga: ",b);
+}else{
+    console.log("le parole sono uguali");
 }
